@@ -24,7 +24,7 @@ int main() {
         for(auto &i : v) { // access by reference, &i is necessary
                             // because the values of the vectors are being updated
             if(i & 1) return false ; // equivalent to if(i % 2 == 1) 
-            i >>= 1; // equivalent to i = i / 2 ;
+            i >>= 1; // equivalent to i /= 2, i = i / 2, i = i >> 1;
         }
         return true;
     };
