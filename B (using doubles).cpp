@@ -18,7 +18,7 @@ int main() {
     // y0 is for points which lie on x-axis, i.e. y = 0
     vector<int> x0, y0 ;
     vector<pair<int, int>> points ; // this vector stores all the points
-    map<long double, vector<pair<int,int>>> m;
+    map<long double, vector<pair<int,int>>> m; // this map stores [`s`, points with slope = `s`]
     bool flag = false ; // true if (0, 0) is present, false otherwise
     for(int i = 0 ; i < n ; ++i) {
         int X, Y; cin >> X >> Y ;
